@@ -6,16 +6,18 @@
 
 ## Parts
 
-- 1x Arduino Pro Micro 5V
-- 1x MH-Z19B CO2 Sensor
+- 1x Arduino Pro Micro 5V: [Amazon*](https://haus-auto.com/p/amz/ArduinoProMicro5), [Aliexpress*](https://haus-auto.com/p/ali/ArduinoProMicro5)
+- 1x MH-Z19B CO2 Sensor: [Amazon*](https://haus-auto.com/p/amz/MHZ19), [Aliexpress*](https://haus-auto.com/p/ali/MHZ19)
 - 1x WSL 10G
-- 1x MP1584 DC-DC Converter
-- 1x 25V 2200µF
-- 1x 6.3V 1000µF
+- 1x MP1584 DC-DC Converter: [Amazon*](https://haus-auto.com/p/amz/MP1584), [Aliexpress*](https://haus-auto.com/p/ali/MP1584)
+- 1x 25V 2200µF: [Amazon*](https://haus-auto.com/p/amz/CAP220025V), [Aliexpress*](https://haus-auto.com/p/ali/CAP220025V)
+- 1x 6.3V 1000µF: [Amazon*](https://haus-auto.com/p/amz/CAP100063V), [Aliexpress*](https://haus-auto.com/p/ali/CAP100063V)
 - 3x 0805 SMD Resistor
 - 3x 0805 LED
 - 1x Terminal Block 5.08mm
 - 1x Push Button
+
+* = Affiliate Link
 
 ## License
 
