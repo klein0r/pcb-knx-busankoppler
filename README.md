@@ -17,7 +17,7 @@
 - 1x Terminal Block 5.08mm
 - 1x Push Button
 
-* = Affiliate Link
+```* = Affiliate Link```
 
 ## License
 
