@@ -2,7 +2,7 @@
 
 ## Preview
 
-![PCB Preview](https://raw.githubusercontent.com/klein0r/pcb-knx-busankoppler/master/preview.png)
+![PCB Preview](https://raw.githubusercontent.com/klein0r/pcb-knx-busankoppler/co2/preview.png)
 
 ## License
 
