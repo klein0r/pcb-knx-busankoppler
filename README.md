@@ -4,6 +4,19 @@
 
 ![PCB Preview](https://raw.githubusercontent.com/klein0r/pcb-knx-busankoppler/co2/preview.png)
 
+## Parts
+
+- 1x Arduino Pro Micro 5V
+- 1x MH-Z19B CO2 Sensor
+- 1x WSL 10G
+- 1x MP1584 DC-DC Converter
+- 1x 25V 2200µF
+- 1x 6.3V 1000µF
+- 3x 0805 SMD Resistor
+- 3x 0805 LED
+- 1x Terminal Block 5.08mm
+- 1x Push Button
+
 ## License
 
 The MIT License (MIT)
