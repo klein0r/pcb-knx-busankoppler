@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name promicro)(type Legacy)(uri /Users/matthiaskleine/Documents/KiCad/libs/promicro.lib)(options "")(descr ""))
+  (lib (name KNXBusankoppler-rescue)(type Legacy)(uri ${KIPRJMOD}/KNXBusankoppler-rescue.lib)(options "")(descr ""))
 )

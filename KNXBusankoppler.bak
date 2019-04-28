@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:KNXBusankoppler-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "KNX-Busankoppler"
 Date "2019-04-17"
-Rev "1.0"
+Rev "1.1"
 Comp "haus-automatisierung.com"
 Comment1 "Matthias Kleine"
 Comment2 ""
@@ -34,7 +34,7 @@ U 1 1 5CB6F800
 P 6100 3600
 F 0 "U1" H 6100 4637 60  0000 C CNN
 F 1 "ProMicro" H 6100 4531 60  0000 C CNN
-F 2 "libs:ProMicro" H 6200 2550 60  0001 C CNN
+F 2 "libs:ProMicroSMD" H 6200 2550 60  0001 C CNN
 F 3 "" H 6200 2550 60  0000 C CNN
 	1    6100 3600
 	1    0    0    -1  
@@ -103,10 +103,10 @@ TX
 Text Label 3150 3650 0    50   ~ 0
 RX
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 5CB71BCE
 P 3400 2850
-F 0 "#PWR?" H 3400 2600 50  0001 C CNN
+F 0 "#PWR01" H 3400 2600 50  0001 C CNN
 F 1 "GND" H 3405 2677 50  0000 C CNN
 F 2 "" H 3400 2850 50  0001 C CNN
 F 3 "" H 3400 2850 50  0001 C CNN
@@ -117,5 +117,285 @@ Wire Wire Line
 	3400 2850 3400 3050
 Connection ~ 3400 3050
 Wire Wire Line
-	3400 3050 3900 3050
+	3400 3050 3500 3050
+NoConn ~ 3100 3350
+NoConn ~ 3100 3750
+$Comp
+L haus-automatisierung:MH_Z19B U2
+U 1 1 5CB88C0A
+P 6700 5100
+F 0 "U2" H 6550 4850 50  0000 C CNN
+F 1 "MH_Z19B" H 6900 4850 50  0000 C CNN
+F 2 "libs:MH-Z19B" H 6700 5100 50  0001 C CNN
+F 3 "" H 6700 5100 50  0001 C CNN
+	1    6700 5100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5400 3150
+NoConn ~ 5400 3250
+NoConn ~ 5400 3350
+Wire Wire Line
+	5400 3850 5000 3850
+Wire Wire Line
+	5400 3950 5100 3950
+NoConn ~ 6800 3050
+NoConn ~ 6800 3250
+NoConn ~ 6800 3350
+NoConn ~ 6800 3450
+NoConn ~ 6800 3550
+NoConn ~ 5400 3750
+NoConn ~ 5400 3650
+NoConn ~ 5400 3550
+NoConn ~ 5400 3450
+$Comp
+L KNXBusankoppler-rescue:MP1584-haus-automatisierung U3
+U 1 1 5CBB2A73
+P 4850 5450
+F 0 "U3" H 4850 5565 50  0000 C CNN
+F 1 "MP1584" H 4850 5474 50  0000 C CNN
+F 2 "libs:MP1584_buck_module_SMD" H 4850 5450 50  0001 C CNN
+F 3 "" H 4850 5450 50  0001 C CNN
+	1    4850 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3550 3400 3550
+Wire Wire Line
+	3400 3550 3400 5400
+Wire Wire Line
+	3500 5700 3500 3050
+Connection ~ 3500 3050
+Wire Wire Line
+	3500 3050 3900 3050
+Text Label 3150 3550 0    50   ~ 0
+20V
+Wire Wire Line
+	6400 5600 6050 5600
+Wire Wire Line
+	6050 5600 6050 4650
+Wire Wire Line
+	6050 4650 5100 4650
+Wire Wire Line
+	5100 4650 5100 3950
+Wire Wire Line
+	5000 3850 5000 4750
+Wire Wire Line
+	5000 4750 7500 4750
+Wire Wire Line
+	7500 4750 7500 5650
+Wire Wire Line
+	7500 5650 7000 5650
+Wire Wire Line
+	5350 5600 5650 5600
+Wire Wire Line
+	5650 5600 5650 5400
+Wire Wire Line
+	5650 5150 6700 5150
+Wire Wire Line
+	6700 5150 6700 5300
+Wire Wire Line
+	5350 5700 5650 5700
+Wire Wire Line
+	5650 5700 5650 5900
+Wire Wire Line
+	5650 6200 6700 6200
+Wire Wire Line
+	6700 6200 6700 6050
+NoConn ~ 6400 5700
+NoConn ~ 7000 5750
+NoConn ~ 7000 5550
+Wire Wire Line
+	4350 5700 3650 5700
+Wire Wire Line
+	4150 5400 4150 5600
+Wire Wire Line
+	4150 5600 4350 5600
+$Comp
+L Device:CP C1
+U 1 1 5CBB91A9
+P 3650 5550
+F 0 "C1" H 3768 5596 50  0000 L CNN
+F 1 "25v 2200uf" H 3768 5505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm_P7.50mm" H 3688 5400 50  0001 C CNN
+F 3 "~" H 3650 5550 50  0001 C CNN
+	1    3650 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 5700
+Wire Wire Line
+	3650 5700 3500 5700
+Wire Wire Line
+	3400 5400 3650 5400
+Connection ~ 3650 5400
+Wire Wire Line
+	3650 5400 4150 5400
+$Comp
+L Device:CP C2
+U 1 1 5CBBBCCF
+P 5800 5650
+F 0 "C2" H 5918 5696 50  0000 L CNN
+F 1 "6.3v 1000uf" H 5918 5605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" H 5838 5500 50  0001 C CNN
+F 3 "~" H 5800 5650 50  0001 C CNN
+	1    5800 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5500 5800 5400
+Wire Wire Line
+	5800 5400 5650 5400
+Connection ~ 5650 5400
+Wire Wire Line
+	5650 5400 5650 5150
+Wire Wire Line
+	5800 5800 5800 5900
+Wire Wire Line
+	5800 5900 5650 5900
+Connection ~ 5650 5900
+Wire Wire Line
+	5650 5900 5650 6200
+$Comp
+L Device:R R1
+U 1 1 5CC4C437
+P 7050 3750
+F 0 "R1" V 7000 3600 50  0000 C CNN
+F 1 "R" V 7050 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6980 3750 50  0001 C CNN
+F 3 "~" H 7050 3750 50  0001 C CNN
+	1    7050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CC4D841
+P 7050 3850
+F 0 "R2" V 7000 3700 50  0000 C CNN
+F 1 "R" V 7050 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6980 3850 50  0001 C CNN
+F 3 "~" H 7050 3850 50  0001 C CNN
+	1    7050 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CC4E3A6
+P 7050 3950
+F 0 "R3" V 7000 3800 50  0000 C CNN
+F 1 "R" V 7050 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6980 3950 50  0001 C CNN
+F 3 "~" H 7050 3950 50  0001 C CNN
+	1    7050 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 3750 6900 3750
+Wire Wire Line
+	6800 3850 6900 3850
+Wire Wire Line
+	6800 3950 6900 3950
+$Comp
+L Device:LED D1
+U 1 1 5CC53A1A
+P 7500 3750
+F 0 "D1" H 7600 3700 50  0000 C CNN
+F 1 "LED" H 7250 3700 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 3750 50  0001 C CNN
+F 3 "~" H 7500 3750 50  0001 C CNN
+	1    7500 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 3750 7900 3750
+Wire Wire Line
+	7900 3750 7900 3550
+Wire Wire Line
+	7900 2950 6800 2950
+$Comp
+L Device:LED D2
+U 1 1 5CC560F7
+P 7500 3850
+F 0 "D2" H 7600 3800 50  0000 C CNN
+F 1 "LED" H 7250 3800 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 3850 50  0001 C CNN
+F 3 "~" H 7500 3850 50  0001 C CNN
+	1    7500 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5CC5708E
+P 7500 3950
+F 0 "D3" H 7600 3900 50  0000 C CNN
+F 1 "LED" H 7250 3900 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 3950 50  0001 C CNN
+F 3 "~" H 7500 3950 50  0001 C CNN
+	1    7500 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 3750 7350 3750
+Wire Wire Line
+	7200 3850 7350 3850
+Wire Wire Line
+	7200 3950 7350 3950
+Wire Wire Line
+	7650 3850 7900 3850
+Wire Wire Line
+	7900 3850 7900 3750
+Connection ~ 7900 3750
+Wire Wire Line
+	7650 3950 7900 3950
+Wire Wire Line
+	7900 3950 7900 3850
+Connection ~ 7900 3850
+Text Label 6900 2950 0    50   ~ 0
+GND
+Wire Wire Line
+	7000 3550 6900 3550
+Wire Wire Line
+	6900 3550 6900 3650
+Wire Wire Line
+	6900 3650 6800 3650
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CC6BB75
+P 7200 3550
+F 0 "SW1" H 7350 3500 50  0000 C CNN
+F 1 "SW_Push" H 7100 3500 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 7200 3750 50  0001 C CNN
+F 3 "~" H 7200 3750 50  0001 C CNN
+	1    7200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5CC7188C
+P 7150 3200
+F 0 "J3" V 7150 3350 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 7300 3450 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7150 3200 50  0001 C CNN
+F 3 "~" H 7150 3200 50  0001 C CNN
+	1    7150 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7250 3400 7450 3400
+Wire Wire Line
+	7450 3400 7450 3550
+Wire Wire Line
+	7450 3550 7400 3550
+Wire Wire Line
+	7150 3400 6900 3400
+Wire Wire Line
+	6900 3400 6900 3550
+Connection ~ 6900 3550
+Text Label 5400 5700 0    50   ~ 0
+GND
+NoConn ~ 6800 3150
+Wire Wire Line
+	7450 3550 7900 3550
+Connection ~ 7450 3550
+Connection ~ 7900 3550
+Wire Wire Line
+	7900 3550 7900 2950
 $EndSCHEMATC
