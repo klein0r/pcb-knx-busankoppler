@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "KNX-Busankoppler"
-Date "2019-04-17"
+Date "2019-05-11"
 Rev "1.1"
 Comp "haus-automatisierung.com"
 Comment1 "Matthias Kleine"
@@ -28,17 +28,6 @@ $EndComp
 NoConn ~ 3100 3150
 NoConn ~ 3100 3450
 NoConn ~ 3100 3950
-$Comp
-L promicro:ProMicro U1
-U 1 1 5CB6F800
-P 6100 3600
-F 0 "U1" H 6100 4637 60  0000 C CNN
-F 1 "ProMicro" H 6100 4531 60  0000 C CNN
-F 2 "libs:ProMicroSMD" H 6200 2550 60  0001 C CNN
-F 3 "" H 6200 2550 60  0000 C CNN
-	1    6100 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 3050 3400 3050
 Text Label 3150 3050 0    50   ~ 0
@@ -126,7 +115,7 @@ U 1 1 5CB88C0A
 P 6700 5100
 F 0 "U2" H 6550 4850 50  0000 C CNN
 F 1 "MH_Z19B" H 6900 4850 50  0000 C CNN
-F 2 "libs:MH-Z19B" H 6700 5100 50  0001 C CNN
+F 2 "halibs:MH-Z19B" H 6700 5100 50  0001 C CNN
 F 3 "" H 6700 5100 50  0001 C CNN
 	1    6700 5100
 	1    0    0    -1  
@@ -348,8 +337,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 3950 7900 3850
 Connection ~ 7900 3850
-Text Label 6900 2950 0    50   ~ 0
-GND
 Wire Wire Line
 	7100 3550 6950 3550
 Wire Wire Line
@@ -367,17 +354,6 @@ F 3 "~" H 7300 3750 50  0001 C CNN
 	1    7300 3550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5CC7188C
-P 7250 3200
-F 0 "J3" V 7250 3350 50  0000 R CNN
-F 1 "Screw_Terminal_01x02" V 7350 3550 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7250 3200 50  0001 C CNN
-F 3 "~" H 7250 3200 50  0001 C CNN
-	1    7250 3200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7350 3400 7600 3400
 Wire Wire Line
@@ -391,11 +367,35 @@ Wire Wire Line
 Connection ~ 6950 3550
 Text Label 5400 5700 0    50   ~ 0
 GND
-NoConn ~ 6800 3150
 Wire Wire Line
 	7600 3550 7900 3550
 Connection ~ 7600 3550
 Connection ~ 7900 3550
 Wire Wire Line
 	7900 3550 7900 2950
+$Comp
+L promicro:ProMicro U1
+U 1 1 5CB6F800
+P 6100 3600
+F 0 "U1" H 6100 4637 60  0000 C CNN
+F 1 "ProMicro" H 6100 4531 60  0000 C CNN
+F 2 "halibs:ArduinoProMicroSMD" H 6200 2550 60  0001 C CNN
+F 3 "" H 6200 2550 60  0000 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+Text Label 6900 2950 0    50   ~ 0
+GND
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5CC7188C
+P 7250 3200
+F 0 "J3" V 7250 3350 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 7350 3550 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7250 3200 50  0001 C CNN
+F 3 "~" H 7250 3200 50  0001 C CNN
+	1    7250 3200
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6800 3150
 $EndSCHEMATC
