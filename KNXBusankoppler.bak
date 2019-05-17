@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:KNXBusankoppler-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -34,7 +34,7 @@ U 1 1 5CB6F800
 P 6100 3600
 F 0 "U1" H 6100 4637 60  0000 C CNN
 F 1 "ProMicro" H 6100 4531 60  0000 C CNN
-F 2 "libs:ProMicro" H 6200 2550 60  0001 C CNN
+F 2 "halibs:ArduinoProMicro" H 6200 2550 60  0001 C CNN
 F 3 "" H 6200 2550 60  0000 C CNN
 	1    6100 3600
 	1    0    0    -1  
@@ -103,10 +103,10 @@ TX
 Text Label 3150 3650 0    50   ~ 0
 RX
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5CB71BCE
 P 3400 2850
-F 0 "#PWR?" H 3400 2600 50  0001 C CNN
+F 0 "#PWR0101" H 3400 2600 50  0001 C CNN
 F 1 "GND" H 3405 2677 50  0000 C CNN
 F 2 "" H 3400 2850 50  0001 C CNN
 F 3 "" H 3400 2850 50  0001 C CNN
@@ -118,4 +118,7 @@ Wire Wire Line
 Connection ~ 3400 3050
 Wire Wire Line
 	3400 3050 3900 3050
+NoConn ~ 3100 3350
+NoConn ~ 3100 3550
+NoConn ~ 3100 3750
 $EndSCHEMATC

@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /Users/matthiaskleine/Documents/KiCad/KNXBusankoppler/KNXBusankoppler.sch)
-    (date "2019 April 17, Wednesday 18:18:46")
-    (tool "Eeschema (5.0.2-5-10.14)")
+    (source /Users/matthiaskleine/Documents/KiCad/KNXBusankopplerPlain/KNXBusankoppler.sch)
+    (date "2019 May 17, Friday 14:34:05")
+    (tool "Eeschema (5.1.0-0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title KNX-Busankoppler)
@@ -24,7 +24,7 @@
       (tstamp 5CB6F33D))
     (comp (ref U1)
       (value ProMicro)
-      (footprint libs:ProMicro)
+      (footprint halibs:ArduinoProMicro)
       (libsource (lib promicro) (part ProMicro) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5CB6F800))
