@@ -1,5 +1,7 @@
 # KNX 5WG1117-2AB12 Adapter PCB
 
+**THIS IS JUST A DEMO PROJECT - DON'T USE THIS IN A PRODUCTION SYSTEM**
+
 ## Preview
 
 ![PCB Preview](https://raw.githubusercontent.com/klein0r/pcb-knx-busankoppler/co2/preview.png)
@@ -23,7 +25,7 @@
 
 The MIT License (MIT)
 
-Copyright (c) 2019 Matthias Kleine <info@haus-automatisierung.com>
+Copyright (c) 2022 Matthias Kleine <info@haus-automatisierung.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
